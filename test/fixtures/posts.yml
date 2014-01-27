@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  who: MyString
+  what: MyString
+  tell_me_more: MyText
+  when: 2014-01-27 00:03:12
+  cool: false
+
+two:
+  who: MyString
+  what: MyString
+  tell_me_more: MyText
+  when: 2014-01-27 00:03:12
+  cool: false

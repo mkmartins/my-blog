@@ -1,0 +1,31 @@
+<h1>Stuff goes here</h1>
+
+<table>
+  <tr>
+    <th>Who</th>
+    <th>What</th>
+    <th>Tell me more</th>
+    <th>When</th>
+    <th>Cool</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @posts.each do |post| %>
+  <tr>
+    <td><%= post.who %></td>
+    <td><%= post.what %></td>
+    <td><%= post.tell_me_more %></td>
+    <td><%= post.when %></td>
+    <td><%= post.cool %></td>
+    <td><%= link_to 'Show', post %></td>
+    <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Post', new_post_path %>
